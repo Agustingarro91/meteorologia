@@ -91,7 +91,7 @@ p {
 }
 
 main{
-  height: calc(100vh - var(--header-height) - 20px);
+  min-height: calc(100vh - var(--header-height) - 65px);
 }
 
 /* ********** Components ********** */
@@ -357,12 +357,14 @@ main{
 .sub-menu.is-active {
   opacity: 1;
   pointer-events: auto;
+  cursor: pointer;
 }
 
 
 .menu li:hover,
 .sub-menu li:hover {
   background-color: var(--first-color);
+  cursor: pointer;
   & *{
     color: var(--white-color);
   }
@@ -632,11 +634,21 @@ progress::-moz-progress-bar {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: var(--header-height);
   padding: 0.5rem;
-  text-align: center;
   color: var(--white-color);
   background-color: var(--third-color);
+  & a{
+    color: var(--white-color);
+    display: flex;
+    align-items: end;
+  }
+  & address{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header {
