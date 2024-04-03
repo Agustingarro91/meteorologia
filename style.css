@@ -39,6 +39,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1400 - 300)));
   color: var(--text-color);
 }
 
@@ -95,6 +96,97 @@ main{
 }
 
 /* ********** Components ********** */
+
+/* ********** Articulos TSR ********** */
+
+
+
+.section-article {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "titleh1 titleh1"
+    "img img "
+    "titleh2 titleh2"
+    "paragraph paragraph "
+    "btn btn  ";
+  gap: 1rem;
+}
+
+.section-hero{
+  height: 100vh;
+}
+
+.item-a {
+  grid-area: titleh1;
+}
+.item-b {
+  grid-area: img;
+  justify-self: center;
+}
+.item-c {
+  grid-area: titleh2;
+  align-self: center;
+}
+.item-d {
+  grid-area: paragraph;
+}
+
+.item-e {
+  grid-area: btn;
+}
+
+@media screen and (min-width: 768px) {
+  .section-article {
+    grid-template-areas:
+      "titleh1 img"
+      "titleh2 img "
+      "paragraph img "
+      "btn img  ";
+
+      height: 100%;
+      align-content: space-evenly;  
+  }
+
+  .tsrHeader{
+    height: calc( 100vh - var(--header-height) - 32px);
+  }
+}
+
+
+/*********** Caracteristicas***********/
+
+.caracteristicas {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+
+  & ul{
+    padding: 1rem;
+
+    & h3{
+      display: inline-block;
+    }
+
+    & li{
+      margin-left: 3rem;
+      line-height: 2rem;
+    }
+  }
+
+  .caracteristicas-aside{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--gray-color);
+  }
+
+
+
+}
 
 /* ********** Carousel ********** */
 @keyframes carousel-slide {
@@ -169,6 +261,42 @@ main{
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
   background-color: var(--gray-dark-color);
+}
+
+/* ********** Cluster ********** */
+
+.cluster {
+  text-align: center;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  & p {
+    align-self: center;
+    max-width: 75%;
+  }
+}
+
+.card-cluster {
+  box-shadow: 1px 1px 9px black;
+  border: thin solid var(--gray-dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  & img {
+    max-width: 100%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    border-bottom: 1px solid var(--gray-color);
+  }
+  & h3 {
+    margin: 0.3rem;
+  }
+}
+.grid-cluster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 15rem));
+  gap: 1rem 1rem;
+  justify-content: center;
 }
 
 /* ********** Contact Form ********** */
@@ -736,7 +864,7 @@ progress::-moz-progress-bar {
 }
 
 .principal {
-  margin: 2rem 0;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
 }
