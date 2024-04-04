@@ -1,0 +1,10 @@
+User-Agent: *
+
+Disallow: /aviso-legal/
+Disallow: /politicas-de-privacidad
+Disallow: /politicas-de-cookies
+
+Allow: /
+Allow: /froggit-hp-1000-se-pro-wifi
+
+Sitemap: https://estacionmeteorologica.top/sitemap_index.xml
