@@ -91,15 +91,13 @@ p {
   line-height: 1.6;
 }
 
-main{
+main {
   min-height: calc(100vh - var(--header-height) - 65px);
 }
 
 /* ********** Components ********** */
 
 /* ********** Articulos TSR ********** */
-
-
 
 .section-article {
   margin-top: 2rem;
@@ -115,7 +113,7 @@ main{
   gap: 1rem;
 }
 
-.section-hero{
+.section-hero {
   height: 100vh;
 }
 
@@ -138,6 +136,11 @@ main{
   grid-area: btn;
 }
 
+
+.btn.amazon{
+  background-color: #ffa54b;
+}
+
 @media screen and (min-width: 768px) {
   .section-article {
     grid-template-areas:
@@ -146,15 +149,14 @@ main{
       "paragraph img "
       "btn img  ";
 
-      height: 100%;
-      align-content: space-evenly;  
+    height: 100%;
+    align-content: space-evenly;
   }
 
-  .tsrHeader{
-    height: calc( 100vh - var(--header-height) - 32px);
+  .tsrHeader {
+    height: calc(100vh - var(--header-height) - 32px);
   }
 }
-
 
 /*********** Caracteristicas***********/
 
@@ -163,29 +165,26 @@ main{
   display: flex;
   flex-direction: column;
 
-  & ul{
+  & ul {
     padding: 1rem;
 
-    & h3{
+    & h3 {
       display: inline-block;
     }
 
-    & li{
+    & li {
       margin-left: 3rem;
       line-height: 2rem;
     }
   }
 
-  .caracteristicas-aside{
+  .caracteristicas-aside {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid var(--gray-color);
   }
-
-
-
 }
 
 /* ********** Carousel ********** */
@@ -274,7 +273,7 @@ main{
     align-self: center;
     max-width: 75%;
   }
-  & a{
+  & a {
     text-decoration: none;
     color: black;
   }
@@ -425,12 +424,13 @@ main{
   fill: var(--first-color);
 }
 
-.menu{  
+.menu {
   position: fixed;
   right: 0;
 }
 
-.menu, .sub-menu {
+.menu,
+.sub-menu {
   bottom: var(--header-height);
   width: 100%;
   display: flex;
@@ -440,17 +440,17 @@ main{
   pointer-events: none;
   transition: opacity 0.5s ease;
 
-  &  ul {
+  & ul {
     list-style: none;
     margin: 0;
     padding: 0;
 
-    &  li {
+    & li {
       padding: 1rem;
       font-size: 1.5rem;
       font-weight: bold;
       text-align: center;
-      
+
       & * {
         color: var(--first-color);
         text-decoration: none;
@@ -459,31 +459,28 @@ main{
   }
 }
 
-.sub-menu{
+.sub-menu {
   position: fixed;
   bottom: var(--header-height-menu);
   left: 0;
 
-  & ul{
-    display: 	flex;
+  & ul {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    &  li {
+    & li {
       padding: 0.5rem;
       font-size: 1rem;
       font-weight: normal;
       text-align: center;
 
-      & *{
+      & * {
         color: var(--white-color);
       }
     }
   }
-
 }
-
-
 
 .menu.is-active,
 .sub-menu.is-active {
@@ -492,17 +489,14 @@ main{
   cursor: pointer;
 }
 
-
 .menu li:hover,
 .sub-menu li:hover {
   background-color: var(--first-color);
   cursor: pointer;
-  & *{
+  & * {
     color: var(--white-color);
   }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .menu-btn {
@@ -516,11 +510,11 @@ main{
     opacity: 1;
     pointer-events: auto;
 
-    & ul{
-      display: flex;   
+    & ul {
+      display: flex;
       position: static;
       width: auto;
-      flex-direction: row;      
+      flex-direction: row;
     }
   }
 
@@ -536,35 +530,33 @@ main{
     background-color: transparent;
   }
 
-  .menu ul > li{
+  .menu ul > li {
     position: relative;
   }
 
-  .sub-menu{
+  .sub-menu {
     position: absolute;
     bottom: unset;
     min-width: 100%;
     width: auto;
-    top:45px;
-    & ul{
+    top: 45px;
+    & ul {
       flex-direction: column;
 
-
-      &  li {
+      & li {
         padding: 0.5rem;
         font-size: 1rem;
         font-weight: normal;
         text-align: center;
-  
-        & *{
+
+        & * {
           color: var(--first-color);
         }
       }
-
     }
   }
 
-  .sub-menu::before{
+  .sub-menu::before {
     content: "";
     height: 10px;
     border-left: 12px solid transparent;
@@ -574,11 +566,6 @@ main{
     top: -12px;
     left: 30%;
   }
-
-
-
-
-
 }
 
 /* ********** Modal ********** */
@@ -669,7 +656,6 @@ progress::-moz-progress-bar {
   border-radius: 0.5rem;
   padding: 1rem;
   display: inline-block;
-  width: 200px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -771,12 +757,12 @@ progress::-moz-progress-bar {
   padding: 0.5rem;
   color: var(--white-color);
   background-color: var(--third-color);
-  & a{
+  & a {
     color: var(--white-color);
     display: flex;
     align-items: end;
   }
-  & address{
+  & address {
     display: flex;
     flex-direction: column;
   }
@@ -828,12 +814,11 @@ progress::-moz-progress-bar {
   padding: 1rem;
   background-color: var(--black-alpha-color);
   color: var(--white-color);
-  opacity: 1;  
+  opacity: 1;
   pointer-events: auto;
   pointer-events: none;
   transition: all 0.5s ease-in-out;
 }
-
 
 .portfolio-card-info > div {
   padding: 1rem;
