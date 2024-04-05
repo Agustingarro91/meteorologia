@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- 3 -->
-  <sitemap>
-    <loc>https://estacionmeteorologica.top/</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://estacionmeteorologica.top/froggit-hp-1000-se-pro-wifi</loc>
-  </sitemap>
-    <sitemap>
-    <loc>https://estacionmeteorologica.top/contacto</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://estacionmeteorologica.top/misol-hp-2550-wifi</loc>
-  </sitemap>
-  
-</sitemapindex>
+<?xml versión="1.0" codificación="UTF-8"?>
+
+<urlset xmlns= "http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url><loc>https://estacionmeteorologica.top/</loc></url>
+   <url><loc>https://estacionmeteorologica.top/froggit-hp-1000-se-pro-wifi</loc><url/>
+   <url><loc>https://estacionmeteorologica.top/contacto</loc><url/>
+   <url><loc>https://estacionmeteorologica.top/misol-hp-2550-wifi</loc><url/>
+
+
+</urlset>
+
+
+
+
+
