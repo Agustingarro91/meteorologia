@@ -141,7 +141,7 @@ main {
   background-color: #ffa54b;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .section-article {
     grid-template-areas:
       "titleh1 img"
