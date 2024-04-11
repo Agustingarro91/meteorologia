@@ -524,7 +524,7 @@ main {
     padding: 0 1rem;
   }
 
-  .menu li:last-child {
+  .menu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -809,6 +809,8 @@ progress::-moz-progress-bar {
 
 .portfolio-card-info {
   position: absolute;
+  
+  border: thin solid var(--white-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -824,10 +826,10 @@ progress::-moz-progress-bar {
 
 .portfolio-card-info > div {
   padding: 1rem;
-  border: thin solid var(--white-color);
   width: 100%;
   height: 100%;
 }
+
 
 .portfolio-modal {
   padding: 1rem;

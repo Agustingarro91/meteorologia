@@ -5,6 +5,9 @@ Disallow: /politicas-de-privacidad
 Disallow: /politicas-de-cookies
 
 Allow: /
-Allow: /froggit-hp-1000-se-pro-wifi
+Allow: /froggit-hp-1000-se-pro-wifi/
+Allow: /misol-hp-2550-wifi/
+Allow: /bresser-5-en-1/
+Allow: /contacto/
 
 Sitemap: https://estacionmeteorologica.top/sitemap_index.xml
