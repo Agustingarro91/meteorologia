@@ -9,5 +9,6 @@ Allow: /froggit-hp-1000-se-pro-wifi/
 Allow: /misol-hp-2550-wifi/
 Allow: /bresser-5-en-1/
 Allow: /contacto/
+Allow: /que-es-una-estacion-meteorologica/
 
 Sitemap: https://estacionmeteorologica.top/sitemap_index.xml

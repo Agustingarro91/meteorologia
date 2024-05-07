@@ -489,7 +489,7 @@ main {
   background-color: var(--first-color);
   cursor: pointer;
 }
-.menu li:hover,
+.menu li:hover span,
 .sub-menu li:hover * {
   color: var(--white-color);
 }
@@ -682,9 +682,7 @@ progress::-moz-progress-bar {
   }
 
   .section-conteiner  article{
-    background-color: gray;
     width: 85%;
-    height: 10vh;
   }
 
 .section-title {
